@@ -133,7 +133,7 @@ contract TestBlockRelayV1 is BlockRelayInterface {
 
   /// @dev Read the beacon of the last block inserted
   /// @return bytes to be signed by bridge nodes
-  function getLastBeacon()
+  function getLastBlockBeacon()
     public
     view
   returns(bytes memory)

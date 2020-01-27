@@ -14,7 +14,7 @@ interface BlockRelayInterface {
   /// @notice Returns the beacon from the last inserted block.
   /// The last beacon (in bytes) will be used by Witnet Bridge nodes to compute their eligibility.
   /// @return last beacon in bytes
-  function getLastBeacon() external view returns(bytes memory);
+  function getLastBlockBeacon() external view returns(bytes memory);
 
   /// @notice Verifies the validity of a data request PoI against the DR merkle root
   /// @param _poi the proof of inclusion as [sibling1, sibling2,..]
